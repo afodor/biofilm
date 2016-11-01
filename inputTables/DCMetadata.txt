@@ -1,0 +1,58 @@
+Sample ID	Group (Associated with)	Extraction Batch Id#	Sample Type	Timepoint (weeks)	Genotype	Mouse #	Sex	Endpoint Age (weeks)	Gavage Order	Cage Number	Colon Tumor #	Forward primer	Reverse primer
+126	BF+bx	28	DC Tissue	12	ApcMin IL10 KO	4	F	24.57	5	1	3	F8	R1
+127	BF-bx	11	DC Tissue	6.5	ApcMin IL10 KO	4	M	18.42	8	4	0	F8	R2
+128	BF+NF	57	DC Tissue	12	Apcmin	11	F	21.86	5	2	N/A	F8	R3
+129	BF+NF	47	DC Tissue	12	ApcMin IL10 KO	1	M	24.57	7	3	2	F8	R4
+130	BF+T #1	3	DC Tissue	12	ApcMin IL10 KO	3	F	24.57	N/A	1	5	F8	R5
+131	BF+bx	33	PC Tissue	12	ApcMin	9	F	23.14	9	3	5	F8	R6
+132	BF+NF	48	DC Tissue	12	ApcMin IL10 KO	2	M	24.57	8	3	7	F8	R7
+133	BF-bx	12	DC Tissue	12	ApcMin	5	F	25	6	1	0	F8	R8
+134	BF+T #2	19	DC Tissue	12	ApcMin IL10 KO	4	M	23.43	5	3	1	F8	R9
+135	BF+T #2	18	DC Tissue	12	ApcMin IL10 KO	3	M	23.43	4	3	6	F8	R10
+136	BF+T #2	23	DC Tissue	12	Apcmin	8	M	23.43	1*	2	3	F8	R11
+137	BF-bx	15	DC Tissue	12	Apcmin	8	M	25	1	2	0	F8	R12
+138	BF+bx	25	DC Tissue	12	ApcMin IL10 KO	1	M	22.71	6	2	0	F8	R13
+139	BF+bx	35	DC Tissue	12	Apcmin	11	M	21.42	7	2	0	F8	R14
+140	BF+T #3	43	DC Tissue	12	ApcMin	8	F	26.71	10	4	N/A	F8	R15
+141	BF+T #3	45	DC Tissue	20	ApcMin	10	F	31	11	4	5	F8	R16
+142	BF+NF	56	DC Tissue	12	ApcMin	10	F	21.86	4	2	4	F9	R1
+143	BF+NF	54	DC Tissue	12	ApcMin	8	M	25.43	10	4	2	F9	R2
+144	BF+T #1	1	DC Tissue	12	ApcMin IL10 KO	1	F	24.57	N/A	1	0	F9	R3
+145	BF+NF	55	DC Tissue	12	ApcMin	9	M	24.71	11	4	0	F9	R4
+146	BF+bx	34	DC Tissue	12	ApcMin	10	M	21.42	8	2	1	F9	R5
+147	BF+T #2	22	DC Tissue	12	ApcMin	7	M	23.43	3	2	0	F9	R6
+148	BF+T #1	7	DC Tissue	12	ApcMin IL10 KO	7	M	24.57	N/A	2	0	F9	R7
+149	BF+T #3	37	DC Tissue	13.5	ApcMin IL10 KO	2	F	25.29	4	1	6	F9	R8
+150	BF+bx	31	DC Tissue	12	ApcMin IL10 KO	7	F	24.71	11	3	5	F9	R9
+151	BF-bx	14	DC Tissue	12	ApcMin	7	F	21.57	3	1	0	F9	R10
+152	BF+T #2	17	DC Tissue	12	ApcMin IL10 KO	2	F	23.43	9	1	5	F9	R11
+153	BF+T #2	20	DC Tissue	12	ApcMin	5	F	23.43	7	1	4	F9	R12
+154	BF+T #2	24	DC Tissue	12	ApcMin	9	M	23.86	2	2	2	F9	R13
+155	BF-bx	8	DC Tissue	12	ApcMin IL10 KO	1	F	22.28571429	5	1	0	F9	R14
+156	BF-bx	9	DC Tissue	12	ApcMin IL10 KO	2	F	22.28571429	4	1	0	F9	R15
+157	BF-bx	10	DC Tissue	12	ApcMin IL10 KO	3	M	23.14285714	2	3	0	F9	R16
+158	BF+T #3	44	DC Tissue	20	ApcMin	9	M	32.71	9	3	7	F10	R1
+159	BF+bx	27	DC Tissue	12	ApcMin IL10 KO	3	F	23.29	4	1	4	F10	R2
+160	BF+NF	50	DC Tissue	12	ApcMin IL10 KO	4	F	24.57	2	2	1	F10	R3
+161	BF+T #3	38	DC Tissue	12	ApcMin IL10 KO	3	F	28.86	3	1	N/A	F10	R4
+162	BF+NF	49	DC Tissue	2	ApcMin IL10 KO	3	M	14.43	9	3	0	F10	R5
+163	BF+NF	52	DC Tissue	12	ApcMin IL10 KO	6	F	24.71	6	2	1	F10	R6
+164	BF+T #1	2	DC Tissue	12	ApcMin IL10 KO	2	F	24.57	N/A	1	5	F10	R7
+165	BF+T #1	6	DC Tissue	12	ApcMin IL10 KO	6	M	24.57	N/A	2	1	F10	R8
+166	BF+bx	26	DC Tissue	12	ApcMin IL10 KO	2	F	22.71	3	1	N/A	F10	R9
+167	BF+T #1	4	DC Tissue	12	ApcMin IL10 KO	4	F	24.57	N/A	1	9	F10	R10
+168	BF+T #3	36	DC Tissue	16	ApcMin IL10 KO	1	F	27.86	1	1	1	F10	R11
+169	BF+T #3	46	DC Tissue	20	Apcmin	11	F	29.57	2	1	5	F10	R12
+170	BF+T #3	40	DC Tissue	20	ApcMin IL10 KO	5	F	32.71	5	2	3	F10	R13
+171	BF+T #2	16	DC Tissue	12	ApcMin IL10 KO	1	F	23.43	8	1	3	F10	R14
+172	BF+NF	53	DC Tissue	12	ApcMin IL10 KO	7	M	24.71	1	1	3	F10	R15
+173	BF+NF	51	DC Tissue	12	ApcMin IL10 KO	5	F	24.57	3	2	N/A	F10	R16
+174	BF+bx	29	DC Tissue	12	ApcMin IL10 KO	5	F	23.57	1	1	3	F11	R1
+175	BF+T #3	39	DC Tissue	20	ApcMin IL10 KO	4	M	32.71	8	3	6	F11	R2
+176	BF+T #3	42	DC Tissue	16	ApcMin IL10 KO	7	F	29	6	2	3	F11	R3
+177	BF+bx	30	DC Tissue	12	ApcMin IL10 KO	6	F	24.57	2	1	7	F11	R4
+178	BF+T #3	41	DC Tissue	20	ApcMin IL10 KO	6	F	32.71	7	2	10	F11	R5
+179	BF+T #1	5	DC Tissue	12	ApcMin IL10 KO	5	M	24.57	N/A	2	1	F11	R6
+180	BF+bx	32	DC Tissue	12	ApcMin	8	F	23.14	10	3	N/A	F11	R7
+181	BF-bx	13	Blank (excluded)	12	ApcMin	6	F	22	7	1	0	F11	R8
+182	BF+T #2	21	Blank (excluded)	12	ApcMin	6	F	23.43	6	1	2	F11	R9
