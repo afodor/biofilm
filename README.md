@@ -22,16 +22,16 @@ Model used for stool: taxa ~ time + group + 1|cage/mouse
 Model used for DC tissue: taxa ~ group + 1|cage 
 
 Apc genotype (Apc folder):
-1. PCoAs: 
+1. apcAnalysis1_pcoa.R.txt-> generates 4 different PCoAs:
    a. Stool & inoculums from 4 groups
    b. DC tissue & inoculums from 4 groups
    c. Stool from 2* groups both timepoints (1 & 12 week) *only sequenced stool from BF-bx & BF+T Apc mice
    d. DC tissue from 4 groups
-2. Boxplots/p value tables of individual taxa for stool & DC tissue (4 groups)
-3. Heatmap of top significant genera from inoculum, stool (1&12 week combined) & DC tissue
-4. 4 individual group PCoAs: Stool samples (1 & 12 week) showing how microbiotas changed over time
-5. Shannon Diversity & richness: 4 groups
-6. PCoA with ANOSIM: 2 groups (BF- versus BF+ combined) for stool (1 & 12 wk) & DC tissue
+2. apcAnalysis2_OTUModel_stool.R.txt and apcAnalysis2_OTUModel_dc.R.txt-> Boxplots/p value tables of individual taxa for stool & DC tissue, respectively (4 groups)
+3. apcAnalysis3_heatmap.R.txt-> Heatmap of top significant genera from inoculum, stool (1&12 week combined) & DC tissue
+4. apcAnalysis4_indiv_stool_pcoa.R.txt-> 4 individual group PCoAs: Stool samples (1 & 12 week) showing how microbiotas changed over time
+5. apcAnalysis5_diversity.R.txt-> Shannon diversity & richness (4 groups)
+6. apcAnalysis6_pcoa_anosim_2group.R.txt-> PCoA with ANOSIM: 2 groups (BF- versus BF+ combined) for stool (1 & 12 wk) & DC tissue
 
 ApcIl10 genotype (ApcIL10 folder):
 1. PCoAs: 
@@ -42,5 +42,7 @@ ApcIl10 genotype (ApcIL10 folder):
 2. Boxplots/p value tables of individual taxa for stool & DC tissue (4 groups)
 3. Heatmap of top significant genera from inoculum, stool (1&12 week combined) & DC tissue
 4. 4 individual group PCoAs: Stool samples (1 & 12 week) showing how microbiotas changed over time
-5. Shannon Diversity & richness: 4 groups
+5. Shannon Diversity & richness (4 groups)
 6. PCoA with ANOSIM: 2 groups (BF- versus BF+ combined) for stool (1 & 12 wk) & DC tissue
+
+heatmapCombined.R.txt (in Apc folder)-> combines all of the heatmaps (Apc and IL10 inoculum, DC and stool) into one figure
