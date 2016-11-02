@@ -1,0 +1,91 @@
+##APC analysis 4 PCoA of stool separated by group
+
+rm(list=ls())
+
+library(vegan)
+
+setwd("")
+
+taxaLevels = c("phylum", "class", "order", "family", "genus", "qiimeClosedRef", "qiimeDeNovo")
+numNumeric = c(20, 27, 48, 107, 313, 2303, 10893) #number of numeric columns
+
+##function to get color (based on time)
+getColor <- function(time) {
+  if(time == 0) {
+    return("black")
+  } else if(time == 1) {
+    return("red")
+  } else if(time == 12) {
+    return("blue")
+  } else {
+    stop(paste("Bad time:", time))
+  }
+}
+
+##function to get shape (based on time)
+getShape <- function(time) {
+  if(time == 0) {
+    return(17)
+  } else if(time == 1) {
+    return(15)
+  } else if(time == 12) {
+    return(16)
+  } else {
+    stop(paste("Bad time:", time))
+  }
+}
+
+##function to draw PCoA
+drawPCoA <- function(table, main) {
+  par(mar=c(4.2,4.5,4,7), xpd=T)
+  pcoa <- capscale(table[,-(1:15)]~1,distance="bray")
+  
+  colors = sapply(table$Timepoint..weeks., getColor, USE.NAMES = F)
+  shapes = sapply(table$Timepoint..weeks., getShape, USE.NAMES = F)
+  
+  ##get percent variance
+  eig = eigenvals(pcoa)
+  if(any(eig<0)) {#need to check there are no negatives
+    warning(paste("NEGATIVE EIGENVALUES-percent variance is incorrect for ", lev, sep=""))
+  }
+  var = eig/sum(eig)*100 
+  
+  ##plot
+  plot(x=pcoa$CA$u[,1], y=pcoa$CA$u[,2], 
+       xlab=paste("MDS1 (", format(var[[1]], digits=0), "%)", sep=""), 
+       ylab=paste("MDS2 (", format(var[[2]], digits=0), "%)", sep=""),
+       main=main, 
+       col=colors, pch=shapes,
+       cex=1.7, cex.axis=1.1, cex.lab=1.7)
+  
+  ##legend
+  time = sort(unique(table$Timepoint..weeks.))
+  timelab = paste("week", time)
+  if(time[1] == 0) {
+    timelab[1] = "inoculum"
+  }
+  col = sapply(time, getColor, USE.NAMES = F)
+  sh = sapply(time, getShape, USE.NAMES = F)
+  legend("topright", inset=c(-.3,0),
+         legend=timelab,
+         col=col,
+         pch=sh)
+}
+
+pdf("apcAnalysis4_indiv_stool_pcoa.pdf", height = 5, width=13)
+for(i in 1:length(taxaLevels)) {
+  taxa = taxaLevels[i]
+  print(taxa)
+  nn = numNumeric[i]
+  name = paste("apcStool_", taxa, "_logNorm_noInoc.txt", sep="")
+  table = read.table(name, sep="\t", header=T, comment.char="", na.strings="N/A", 
+                     colClasses=c("numeric", rep("character", 3), "numeric", rep("character", 3),
+                                  "numeric", "character", "character", "numeric", "character", "character", 
+                                  rep("numeric", nn)))
+  par(mfrow=c(1,2))
+  drawPCoA(table[table$Group..Associated.with.=="BF-bx",], paste("ApcMin", taxa, "BF-bx"))
+  drawPCoA(table[table$Group..Associated.with.=="BF+T",], paste("ApcMin", taxa, "BF+T"))
+}
+dev.off()
+
+
